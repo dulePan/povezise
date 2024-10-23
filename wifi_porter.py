@@ -1,9 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-# Prilagodite osnovne postavke stranice
-st.set_page_config(page_title="WiFi Porter - Brzo povezivanje na WiFi", page_icon="📶", layout="wide", initial_sidebar_state="collapsed")
-
+# Osnovna konfiguracija stranice
+st.set_page_config(page_title="WiFi Porter", page_icon="📶", layout="wide", initial_sidebar_state="collapsed")
 # Dodavanje meta opisa (za SEO)
 st.markdown("""
     <meta name="description" content="WiFi Porter - uređaj za lako povezivanje na WiFi za apartmane, hotele i stan na dan. NFC, QR kod ili klasična lozinka.">
@@ -11,77 +10,111 @@ st.markdown("""
     <meta name="author" content="WiFi Porter Team">
 """, unsafe_allow_html=True)
 
-# Učitaj slike
-#wifi_image = Image.open("wifi_porter.jpg")  # Slika WiFi Portera
-#nfc_image = Image.open("nfc_example.jpg")   # Slika NFC funkcionalnosti
-#qr_image = Image.open("qr_example.jpg")     # Slika QR koda
-
-# Naslovna sekcija - SEO Heading Struktura (H1 za glavni naslov)
-st.title("WiFi Porter - Brzo i jednostavno WiFi povezivanje za vaše goste")
+# Naslovna slika i CTA
+columns_images = st.columns(3)
+with columns_images[0]:
+  st.image("resources/wifi_porter_0 - Copy2.png",width=400)
+st.title(":blue[WiFi Porter] – Povežite vaše goste na WiFi u sekundi")
 st.markdown("""
-### Povežite goste na WiFi bez muke, koristeći NFC, QR kod ili klasičnu lozinku.
-**Za apartmane, hotele i izdavače stanova.**
+### Povežite goste na WiFi bez muke, koristeći :blue[NFC], :blue[QR] kod ili klasičnu :blue[lozinku].
 """)
+st.info("Za izdavače: Stanova, Apartmana, Hostela i Hotela.")
 
 # Slika proizvoda i opis (Alt tekst za slike - SEO)
-#st.image(wifi_image, use_column_width=True, caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
+columns_images = st.columns(3)
+with columns_images[1]:
+   st.image("resources/wifi_porter_0 - Copy2.png", use_column_width=False, width=450,caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
 st.write("""
 WiFi Porter je uređaj koji omogućava gostima da se brzo i lako povežu na vaš WiFi. 
 Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši gosti će imati besprekorno iskustvo povezivanja.
+         
 """)
+st.divider()
+# Prednosti sekcija
+st.header("Zašto odabrati WiFi Porter?")
+st.markdown("""
+- Jednostavno postavljanje: Podesite uređaj za nekoliko minuta.
+- Kompatibilnost: Radi sa svim pametnim telefonima i uređajima.
+- Bez lozinke: NFC i QR tehnologija eliminišu unos lozinki.
+- Poboljšano korisničko iskustvo: Gosti se povezuju brzo i bez komplikacija.
+- Moderan dizajn: Uređaj se lako uklapa u bilo koji prostor.
+""")
+st.markdown(f"\n")
 
-# Sekcija sa slikama NFC i QR funkcionalnosti
-st.subheader("Kako funkcioniše?")
-#col1, col2 = st.columns(2)
-
-#with col1:
-#    st.image(nfc_image, caption="NFC funkcionalnost - prislonite telefon da se povežete", use_column_width=True)
-#with col2:
-#    st.image(qr_image, caption="QR kod - skenirajte i povežite se", use_column_width=True)
+with st.container(border=True):
+  # Kako funkcioniše sekcija
+  st.header("Kako funkcioniše?")
+  col1, col2, col3 = st.columns(3)
+  with col1:
+      st.image("resources/wifi_porter_1.jpg", caption="NFC - Prislonite telefon", use_column_width=True)
+      st.write("NFC funkcionalnost: Brzo povezivanje samo prislonite telefon.")
+  with col2:
+      st.image("resources/wifi_porter_2.jpg", caption="QR kod - Skenirajte i povežite se", use_column_width=True)
+      st.write("QR kod: Skenirajte i automatski pristupite WiFi mreži.")
+  with col3:
+      st.image("resources/wifi_porter_3.jpg", caption="Unesite šifru", use_column_width=True)
+      st.write("Lozinka: Klasično povezivanje pomoću lozinke.")
 
 st.write("""
 ### Jednostavni koraci za povezivanje:
-1. Postavite WiFi Porter u apartman, sobu ili recepciju.
-2. Gosti prislone telefon na NFC tag ili skeniraju QR kod.
-3. Automatsko povezivanje na WiFi bez unosa lozinke.
+1. Postavite WiFi Porter u apartman, sobu ili na recepciji.
+2. Otvorite aplikaciju na telefonu, upisite sifru i ime WiFi-a, i prislonite telefon na WiFi porter.
+3. Skinite pdf fajl sa markiranim QR codom i sifrom, koju postavljate na zadnji deo uredjaja.
 """)
 
-# Sekcija prednosti sa jasnom struktura za SEO
-st.subheader("Prednosti za vlasnike apartmana, hostela i hotela")
+st.divider()
+# Cenovnik sekcija
+st.header("Cenovnik")
 st.write("""
-- **Jednostavno postavljanje**: Instalirajte uređaj za nekoliko minuta.
-- **Poboljšano korisničko iskustvo**: Gosti se povezuju brzo i bez komplikacija.
-- **Smanjenje zahteva korisničke podrške**: Više nema pitanja o lozinkama.
-- **Moderan dizajn**: WiFi Porter se lako uklapa u svaki prostor.
+Odaberite paket koji vam odgovara:
+- 1 uređaj: 40 EUR
+- 5 uređaja: 35 EUR po komadu
+- 10+ uređaja: 30 EUR po komadu
 """)
+st.markdown(" [Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.](#kontaktirajte-nas)")
+st.divider()
 
-# CTA (Call to Action) - Cena i paketi
-st.subheader("Cenovnik")
-st.write("""
-Ponuda na osnovu količine:
+# Testimonijali sekcija
+st.header("Šta kažu naši klijenti?")
+st.write("Pogledajte iskustva vlasnika apartmana i hotela.")
+col1, col2, col3 = st.columns(3)
+with col1:
+    with st.container(border=True):
+      st.info("Marko, vlasnik apartmana: Gostima je sada mnogo lakše da se povežu na WiFi.")
+with col2:
+    with st.container(border=True):
+      st.info("Milica, menadžer hotela: Smanjili smo zahteve za podršku zahvaljujući WiFi Porteru.")
+with col3:
+    with st.container(border=True):
+      st.info("Ivana, vlasnica hostela: Savršen uređaj za brzo povezivanje gostiju.")
+st.divider()
 
-- 1 uređaj: **40 EUR**
-- 5 uređaja: **35 EUR** po komadu
-- 10+ uređaja: **30 EUR** po komadu
+# FAQ sekcija
+st.header("Često postavljana pitanja")
+faq1 = st.expander("Kako instalirati WiFi Porter?")
+faq1.write("Jednostavno postavite uređaj na vidljivo mesto i povežite ga sa WiFi mrežom.")
+faq2 = st.expander("Da li radi sa svim uređajima?")
+faq2.write("WiFi Porter je kompatibilan sa svim modernim pametnim telefonima i tabletima.")
+faq3 = st.expander("Mogu li personalizovati WiFi Porter?")
+faq3.write("Da, možemo prilagoditi izgled uređaja sa vašim logotipom.")
+st.divider()
 
-Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.
-""")
-
-# Kontakt forma sa CTA dugmetom
-st.subheader("Zainteresovani? Kontaktirajte nas")
-st.write("Popunite formu ispod ili nas kontaktirajte putem emaila **wifi.porter@example.com**")
-
-with st.form("contact_form"):
+# Kontakt forma
+st.header("Kontaktirajte nas")
+st.write("Popunite formu ispod za više informacija o WiFi Porteru.")
+with st.form(key="contact_form"):
     name = st.text_input("Vaše ime")
     email = st.text_input("Vaš email")
-    message = st.text_area("Poruka")
+    message = st.text_area("Vaša poruka")
+    submit_button = st.form_submit_button(label="Pošaljite")
+    if submit_button:
+        st.success(f"Hvala {name}, vaša poruka je poslata!")
 
-    submitted = st.form_submit_button("Pošaljite poruku")
-    if submitted:
-        st.write(f"Hvala {name}, vaša poruka je poslata!")
-
-# Footer sa ključnim informacijama za SEO
+# Footer
 st.markdown("""
 ---
-**WiFi Porter** | Brzo i jednostavno WiFi povezivanje za apartmane, hotele i stan na dan. | Kontakt: wifi.porter@example.com
+Kontakt informacije:
+- Email: wifi.porter@example.com
+- Telefon: +381 64 123 4567
 """)
+
