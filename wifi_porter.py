@@ -12,9 +12,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Učitaj slike
-wifi_image = Image.open("wifi_porter.jpg")  # Slika WiFi Portera
-nfc_image = Image.open("nfc_example.jpg")   # Slika NFC funkcionalnosti
-qr_image = Image.open("qr_example.jpg")     # Slika QR koda
+#wifi_image = Image.open("wifi_porter.jpg")  # Slika WiFi Portera
+#nfc_image = Image.open("nfc_example.jpg")   # Slika NFC funkcionalnosti
+#qr_image = Image.open("qr_example.jpg")     # Slika QR koda
 
 # Naslovna sekcija - SEO Heading Struktura (H1 za glavni naslov)
 st.title("WiFi Porter - Brzo i jednostavno WiFi povezivanje za vaše goste")
@@ -24,7 +24,7 @@ st.markdown("""
 """)
 
 # Slika proizvoda i opis (Alt tekst za slike - SEO)
-st.image(wifi_image, use_column_width=True, caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
+#st.image(wifi_image, use_column_width=True, caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
 st.write("""
 WiFi Porter je uređaj koji omogućava gostima da se brzo i lako povežu na vaš WiFi. 
 Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši gosti će imati besprekorno iskustvo povezivanja.
@@ -34,10 +34,10 @@ Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši
 st.subheader("Kako funkcioniše?")
 col1, col2 = st.columns(2)
 
-with col1:
-    st.image(nfc_image, caption="NFC funkcionalnost - prislonite telefon da se povežete", use_column_width=True)
-with col2:
-    st.image(qr_image, caption="QR kod - skenirajte i povežite se", use_column_width=True)
+#with col1:
+#    st.image(nfc_image, caption="NFC funkcionalnost - prislonite telefon da se povežete", use_column_width=True)
+#with col2:
+#    st.image(qr_image, caption="QR kod - skenirajte i povežite se", use_column_width=True)
 
 st.write("""
 ### Jednostavni koraci za povezivanje:
