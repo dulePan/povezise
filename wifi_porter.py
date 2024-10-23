@@ -32,7 +32,7 @@ Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši
 
 # Sekcija sa slikama NFC i QR funkcionalnosti
 st.subheader("Kako funkcioniše?")
-col1, col2 = st.columns(2)
+#col1, col2 = st.columns(2)
 
 #with col1:
 #    st.image(nfc_image, caption="NFC funkcionalnost - prislonite telefon da se povežete", use_column_width=True)
