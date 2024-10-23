@@ -5,16 +5,16 @@ from PIL import Image
 st.set_page_config(page_title="WiFi Porter", page_icon="📶", layout="wide")
 
 # Učitaj slike
-wifi_image = Image.open("wifi_porter.jpg")  # Slika WiFi Portera
-nfc_image = Image.open("nfc_example.jpg")   # Slika NFC funkcionalnosti
-qr_image = Image.open("qr_example.jpg")     # Slika QR koda
+#wifi_image = Image.open("wifi_porter.jpg")  # Slika WiFi Portera
+#nfc_image = Image.open("nfc_example.jpg")   # Slika NFC funkcionalnosti
+#qr_image = Image.open("qr_example.jpg")     # Slika QR koda
 
 # Naslovna sekcija
 st.title("WiFi Porter - Brzo i jednostavno WiFi povezivanje za vaše goste")
 st.markdown("**Povežite goste na WiFi bez muke, koristeći NFC, QR kod ili klasičnu lozinku.**")
 
 # Slika proizvoda i opis
-st.image(wifi_image, use_column_width=True)
+#st.image(wifi_image, use_column_width=True)
 st.write("""
 WiFi Porter je uređaj koji omogućava gostima da se brzo i lako povežu na vaš WiFi. 
 Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši gosti će imati besprekorno iskustvo povezivanja.
@@ -29,10 +29,10 @@ Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši
 st.subheader("Kako funkcioniše?")
 col1, col2, col3 = st.columns(3)
 
-with col1:
-    st.image(nfc_image, caption="NFC funkcionalnost", use_column_width=True)
-with col2:
-    st.image(qr_image, caption="QR kod povezivanje", use_column_width=True)
+#with col1:
+    #st.image(nfc_image, caption="NFC funkcionalnost", use_column_width=True)
+#with col2:
+   # st.image(qr_image, caption="QR kod povezivanje", use_column_width=True)
 with col3:
     st.write("""
     **Jednostavni koraci za povezivanje:**
