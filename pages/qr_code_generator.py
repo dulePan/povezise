@@ -47,8 +47,8 @@ if st.button("Generiši QR kod"):
         # PDF Generation
         pdf_buffer = BytesIO()  # Buffer for the PDF
         # Define dimensions for the rectangle in mm
-        rect_width_mm = 77.5  # Rectangle width in mm
-        rect_height_mm = 39  # Rectangle height in mm
+        rect_width_mm = 73  # Rectangle width in mm
+        rect_height_mm = 37  # Rectangle height in mm
         # Convert mm to points (1 mm = 2.83465 points)
         rect_width_pts = rect_width_mm * mm
         rect_height_pts = rect_height_mm * mm
@@ -67,7 +67,7 @@ if st.button("Generiši QR kod"):
         c_show.setDash(3, 2)  # 3 mm dashes and 2 mm gaps
         c_show.setStrokeColorRGB(0, 0, 0)  # Set border color to black
         # c.setFillColorRGB(1, 1, 1)  # Ensure rectangle is filled with white        
-        c_show.rect(1,7.5, rect_width, rect_height, stroke=1, fill=0)
+        c_show.rect(1.5,1, rect_width, rect_height, stroke=1, fill=0)
 
         # Save QR code to a temporary file and add to PDF
         with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp_file:
