@@ -1,5 +1,6 @@
-qrcode
+streamlit
+qrcode[pil]
 Pillow
 reportlab
-streamlit-prf-viewer
+streamlit-pdf-viewer
 PyMuPDF
