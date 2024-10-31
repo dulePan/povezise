@@ -1,0 +1,5 @@
+qrcode
+Pillow
+reportlab
+streamlit-prf-viewer
+PyMuPDF
