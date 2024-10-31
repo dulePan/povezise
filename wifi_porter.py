@@ -14,8 +14,8 @@ st.markdown("""
 # page = st.sidebar.radio("Izaberite stranicu:", ["Početna", "QR Code Generator"])
 pages = {
     "Your account": [
-        st.Page("pages/qr_code_generator.py", title="Create your account") 
+        st.Page("pages/qr_code_generator.py", title="Kreiraj QR-code") 
     ]
 }
-pg = st.navigation([st.Page("pages/wifi_porter_main.py"),st.Page("pages/qr_code_generator.py")],position="sidebar",expanded=True)
+pg = st.navigation([st.Page("pages/wifi_porter_main.py",title="Početna"),st.Page("pages/qr_code_generator.py",title="Kreiraj QR-code")],position="sidebar",expanded=True)
 pg.run()
