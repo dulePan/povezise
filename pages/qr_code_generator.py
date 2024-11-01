@@ -121,7 +121,7 @@ if st.button("Generiši QR kod"):
         c_print.drawImage(tmp_file_path, 4.5 * mm, 9.5 * mm, width=23 * mm, height=23 * mm)
         # Add WiFi credentials text on the right side
         c_print.setFont("Roboto-Bold",7.5)
-        c_print.drawString(text_x, text_y, f"WiFi: {ssid}")
+        c_print.drawString(text_x, text_y, f"WiFi:  {ssid}")
         c_print.drawString(text_x, 18 * mm, f"Pass: {password}")
         # Save the PDF
         c_print.save()
