@@ -135,7 +135,7 @@ if st.button("Generiši QR kod"):
         # )
         st.download_button(
             label="Preuzmite QR PDF",
-            data=pdf_print_buffer,
+            data=pdf_buffer,
             file_name="wifi_pdf.pdf",
             mime="application/pdf"
         )
