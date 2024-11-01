@@ -20,8 +20,9 @@ columns_images = st.columns(3)
 with columns_images[1]:
    st.image("resources/wifi_porter_4_copy.png", use_column_width=False, width=450,caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
 
-if st.button("Kreiraj QR kod", use_column_width=True ):
+if st.button("Kreiraj QR-kod za uređaj", use_column_width=True ):
   st.switch_page("pages/qr_code_generator.py")
+  
 # Prednosti sekcija
 st.header("Zašto odabrati WiFi Porter?")
 st.markdown("""
