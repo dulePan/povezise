@@ -5,26 +5,25 @@ from PIL import Image
 columns_images = st.columns(3)
 with columns_images[0]:
   st.image("resources/wifi_porter_0 - Copy2.png",width=400)
-st.title(":blue[WiFi Porter] – Povežite vaše goste na WiFi u sekundi")
+st.title(":blue[PovežiSe uređaj] – Povežite vaše goste na WiFi u sekundi")
 st.markdown("""
 ### Povežite goste na WiFi bez muke, koristeći :blue[NFC], :blue[QR kod] ili klasičnu :blue[lozinku].
 """)
 st.info("**Za izdavače: Stanova, Apartmana, Hostela i Hotela.**", icon=":material/tips_and_updates:")
-st.write("""
-WiFi Porter je uređaj koji omogućava gostima da se brzo i lako povežu na vaš WiFi. 
+st.write("""PovežiSe uređaj omogućava gostima da se brzo i lako povežu na vaš WiFi. 
 Bilo da koriste **NFC tehnologiju**, **QR kod** ili klasični unos šifre, vaši gosti će imati besprekorno iskustvo povezivanja.
          
 """)
 # Slika proizvoda i opis (Alt tekst za slike - SEO)
 columns_images = st.columns(3)
 with columns_images[1]:
-   st.image("resources/wifi_porter_4_copy.png", use_column_width=False, width=450,caption="WiFi Porter uređaj za brzo povezivanje na WiFi")
+   st.image("resources/wifi_porter_4_copy.png", use_column_width=False, width=450,caption="PovežiSe je uređaj za brzo povezivanje na WiFi")
 
 if st.button("Kreiraj QR-kod za uređaj", use_container_width=True ):
   st.switch_page("pages/qr_code_generator.py")
   
 # Prednosti sekcija
-st.header("Zašto odabrati WiFi Porter?")
+st.header("Zašto da odabereš PovežiSe?")
 st.markdown("""
 - Jednostavno postavljanje: Podesite uređaj za nekoliko minuta.
 - Kompatibilnost: Radi sa svim pametnim telefonima i uređajima.
@@ -51,8 +50,8 @@ with st.container(border=True):
 
 st.write("""
 ### Jednostavni koraci za podešavanje:
-1. Postavite WiFi Porter u apartman, sobu ili na recepciji.
-2. Otvorite aplikaciju na telefonu, upisite sifru i ime WiFi-a, i prislonite telefon na WiFi porter.
+1. Postavite PovežiSe uređaj u apartman, sobu ili na recepciji.
+2. Otvorite aplikaciju na telefonu, upisite sifru i ime WiFi-a, i prislonite telefon na PovežiSe uređaj.
 3. Skinite pdf fajl sa markiranim QR codom i sifrom, i postavite na zadnji deo uredjaja.
 """)
 
@@ -61,48 +60,48 @@ st.divider()
 st.header("Cenovnik")
 st.write("""
 Odaberite paket koji vam odgovara:
-- 1 uređaj: 1640 din
-- 5 uređaja: 1470 din po  komadu
-- 10+ uređaja: 1390 din po komadu
+- 1 uređaj: 2500 din
+- 20 uređaja: 2250 din po komadu
+- 30+ uređaja: 2100 din po komadu
 """)
 st.markdown(" [Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.](#kontaktirajte-nas)")
 st.divider()
 
 # Testimonijali sekcija
-st.header("Šta kažu naši klijenti?")
-st.write("Pogledajte iskustva vlasnika apartmana i hotela.")
-col1, col2, col3 = st.columns(3)
-with col1:
-    with st.container(border=True):
-      st.info("Marko, vlasnik apartmana: Gostima je sada mnogo lakše da se povežu na WiFi.")
-with col2:
-    with st.container(border=True):
-      st.info("Milica, menadžer hotela: Smanjili smo zahteve za podršku zahvaljujući WiFi Porteru.")
-with col3:
-    with st.container(border=True):
-      st.info("Ivana, vlasnica hostela: Savršen uređaj za brzo povezivanje gostiju.")
-st.divider()
+# st.header("Šta kažu naši klijenti?")
+# st.write("Pogledajte iskustva vlasnika apartmana i hotela.")
+# col1, col2, col3 = st.columns(3)
+# with col1:
+#     with st.container(border=True):
+#       st.info("Marko, vlasnik apartmana: Gostima je sada mnogo lakše da se povežu na WiFi.")
+# with col2:
+#     with st.container(border=True):
+#       st.info("Milica, menadžer hotela: Smanjili smo zahteve za podršku zahvaljujući WiFi Porteru.")
+# with col3:
+#     with st.container(border=True):
+#       st.info("Ivana, vlasnica hostela: Savršen uređaj za brzo povezivanje gostiju.")
+# st.divider()
 
 # FAQ sekcija
 st.header("Često postavljana pitanja")
-faq1 = st.expander("Kako instalirati WiFi Porter?")
+faq1 = st.expander("Kako instalirati PovežiSe?")
 faq1.write("Jednostavno postavite uređaj na vidljivo mesto i povežite ga sa WiFi mrežom:")
 faq1.write("""
 Koraci:
 1. Otvorite aplikaciju na telefonu.
-2. Upisite ime i sifru WiFi-a, i prislonite telefon na WiFi porter.
+2. Upisite ime i sifru WiFi-a, i prislonite telefon na PovežiSe.
 3. Skinite pdf fajl sa markiranim QR codom i sifrom, koju postavljate na zadnji deo uredjaja.
 """)
 faq2 = st.expander("Da li radi sa svim uređajima?")
-faq2.write("WiFi Porter je kompatibilan sa svim modernim pametnim telefonima i tabletima.")
+faq2.write("PovežiSe je kompatibilan sa svim modernim pametnim telefonima i tabletima.")
 faq2.write("""
            - **NFC** tehnologiju poseduje većina novijih pametnih telefona.
            - **QR code** mogu da skeniraju svi telefoni koji poseduju kameru.
            - Uz pomoć **imena i šifre WiFi-a** mogu se povezati svi uređaji.
 """)
 
-faq3 = st.expander("Mogu li personalizovati WiFi Porter?")
-faq3.write("Da, možemo prilagoditi izgled uređaja sa vašim logotipom.")
+# faq3 = st.expander("Mogu li personalizovati WiFi Porter?")
+# faq3.write("Da, možemo prilagoditi izgled uređaja sa vašim logotipom.")
 st.divider()
 
 # Kontakt forma
@@ -120,7 +119,7 @@ with st.form(key="contact_form"):
 st.markdown("""
 ---
 Kontakt informacije:
-- Email: wifi.porter@example.com
+- Email: info@povezise.rs
 - Telefon: +381 64 123 4567
 """)
 
