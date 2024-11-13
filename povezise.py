@@ -10,7 +10,7 @@ st.markdown("""
     <meta name="author" content="Poveži Se Team">
 """, unsafe_allow_html=True)
 
-st.logo( "resources\logo_povezise.png",size="large", link=None, icon_image="resources\logo_povezise.png")
+st.logo( "resources/logo_povezise.png",size="large", link=None, icon_image="resources\logo_povezise.png")
 
 # Sidebar opcije
 pg = st.navigation([st.Page("pages/povezise_main.py",title="Početna"),st.Page("pages/qr_code_generator.py",title="Kreiraj QR-code")],position="sidebar",expanded=False)
