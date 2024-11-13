@@ -332,7 +332,7 @@ with st.form(key="contact_form"):
         st.success(f"Hvala {name}, vaša poruka je poslata!")
 
 # Footer
-st.image("resources\logo_povezise.png",width=100)
+st.image("resources/logo_povezise.png",width=100)
 
 st.markdown("""
 ---
