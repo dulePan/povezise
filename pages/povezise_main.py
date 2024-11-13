@@ -117,7 +117,7 @@ with columns_how_works_3[1]:
   st.subheader(" :blue[:material/wifi_find:] Pronađite naziv WiFi mreže na uređaju")
   st.subheader(" :blue[:material/password:] Unesite lozinku koja je prikazana na uređaju")
   st.subheader(" :blue[:material/nest_remote_comfort_sensor:] Povežite se i uživajte u stabilnoj vezi")
-st.divider()
+
   # st.header("NFC funkcionalnost: Brzo povezivanje samo prislonite telefon.")
 # with st.container(border=True): 
 #   # Kako funkcioniše sekcija
@@ -133,25 +133,134 @@ st.divider()
 #   with col3:
 #       st.image("resources/wifi_porter_3.jpg", caption="Unesite šifru", use_column_width=True)
 #       st.write("Lozinka: Klasično povezivanje pomoću lozinke.")
+st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+st.markdown("""
+<div class="vc_row wpb_row vc_row-fluid">
+    <div class="wpb_column vc_column_container vc_col-sm-12">
+        <div class="vc_column-inner">
+            <div class="wpb_wrapper">
+                <section id="how-it-works" class="how-it-works">
+                    <div class="container">
+                        <div class="section-header wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; text-align: center;">
+                            <h1>Jednostavni koraci za podešavanje</h1>
+                            <p class="how-p">Postavite i konfigurišite <span style="color:#60b4ff">PovežiSe</span> uređaj u samo nekoliko koraka. Brzo i jednostavno, bez komplikacija.</p>
+                        </div>
+                        <div class="work-processes" style="display: flex; justify-content: space-between; gap: 20px;">
+                            <!-- Korak 1 -->
+                            <div class="work-process wow fadeIn" style="flex: 1; text-align: center;">
+                                <div class="process-icon">
+                                    <img decoding="async" alt="Postavljanje uređaja" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/05/desktop-106x106.png">
+                                </div>
+                                <h3>Postavite uređaj</h3>
+                                <p>Postavite <span style="color:#60b4ff">PovežiSe</span> uređaj u apartman, sobu ili na recepciji, na lako dostupno mesto za goste.</p>
+                            </div>
+                            <!-- Korak 2 -->
+                            <div class="work-process wow fadeIn" style="flex: 1; text-align: center;">
+                                <div class="process-icon">
+                                    <img decoding="async" alt="Povezivanje uređaja" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/05/toggles-106x106.png">
+                                </div>
+                                <h3>Konfigurišite uređaj</h3>
+                                <p>Otvorite aplikaciju na telefonu, unesite WiFi naziv i lozinku, i prislonite telefon na uređaj za automatsko podešavanje.</p>
+                            </div>
+                            <!-- Korak 3 -->
+                            <div class="work-process wow fadeIn" style="flex: 1; text-align: center;">
+                                <div class="process-icon">
+                                    <img decoding="async" alt="Pristup gostima" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/05/trophy-106x106.png">
+                                </div>
+                                <h3>Obezbedite pristup gostima</h3>
+                                <p>Preuzmite PDF fajl sa generisanim QR kodom i WiFi podacima, i prikačite ga na poleđinu uređaja za jednostavan pristup gostima.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+""",unsafe_allow_html=True)
 
-st.write("""
-### Jednostavni koraci za podešavanje:
-1. Postavite PovežiSe uređaj u apartman, sobu ili na recepciji.
-2. Otvorite aplikaciju na telefonu, upisite sifru i ime WiFi-a, i prislonite telefon na PovežiSe uređaj.
-3. Skinite pdf fajl sa markiranim QR codom i sifrom, i postavite na zadnji deo uredjaja.
-""")
-
-st.divider()
+ 
+# st.divider()
 # Cenovnik sekcija
-st.header("Cenovnik")
-st.write("""
-Odaberite paket koji vam odgovara:
-- 1 uređaj: 2500 din
-- 20 uređaja: 2250 din po komadu
-- 30+ uređaja: 2100 din po komadu
-""")
-st.markdown(" [Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.](#kontaktirajte-nas)")
-st.divider()
+# st.header("Cenovnik")
+st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+st.markdown("""
+<div style="margin-top: 30px;">
+  <div style="text-align: center;">
+    <h1>Naša Kolekcija</h1>
+    <p>Izaberite savršen <span style="color:#60b4ff">PovežiSe</span> uređaj za vašu potrebu! Nudimo fleksibilne pakete uređaja sa opcijama za različite potrebe – od manjih instalacija do većih objekata. Uređaji dolaze u dve elegantne boje: bela i crna, sa istom cenom za oba modela.</p>
+  </div>
+<div class="row collections" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+    <div class="row m0 featured-img">
+      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-1-213x213.jpg" alt="PovežiSe NFC Edition" style="max-width: 100%; height: auto;">
+    </div>
+    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> NFC Edition</h4>
+    <h5 class="category">WiFi Connection Device</h5>
+    <h4 class="price">2500 din</h4>
+    <p><strong>Izbor boje:</strong> Bela i Crna</p>
+    <a href="#product-choose-4" class="btn">CHOOSE</a>
+  </div>
+
+  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+    <div class="row m0 featured-img">
+      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe QR Edition" style="max-width: 100%; height: auto;">
+    </div>
+    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> QR Edition</h4>
+    <h5 class="category">WiFi Connection Device</h5>
+    <h4 class="price">2500 din</h4>
+    <p><strong>Izbor boje:</strong> Bela i Crna</p>
+    <a href="#product-choose-3" class="btn">CHOOSE</a>
+  </div>
+
+  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="1" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+    <div class="row m0 featured-img">
+      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-3-213x213.jpg" alt="PovežiSe Basic Edition" style="max-width: 100%; height: auto;">
+    </div>
+    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Basic Edition</h4>
+    <h5 class="category">WiFi Connection Device</h5>
+    <h4 class="price">2500 din</h4>
+    <p><strong>Izbor boje:</strong> Bela i Crna</p>
+    <a href="#product-choose-2" class="btn">CHOOSE</a>
+  </div>
+
+  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="0.5" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+    <div class="row m0 featured-img">
+      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe Premium Edition" style="max-width: 100%; height: auto;">
+    </div>
+    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Premium Edition</h4>
+    <h5 class="category">WiFi Connection Device</h5>
+    <h4 class="price">2500 din</h4>
+    <p><strong>Izbor boje:</strong> Bela i Crna</p>
+    <a href="#product-choose-1" class="btn">CHOOSE</a>
+  </div>
+</div>
+
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+columns_products = st.columns(4,gap ="medium")
+with columns_products[1]:
+  with st.container(border=True,key="container_products_02"):
+    st.image("resources/wifi_porter_0 - Copy2.png",use_container_width=True)
+    st.markdown(f"""<h2 align="center"> <span style="color:#60b4ff">PovežiSe</span><br>Black Edition</h2>""",unsafe_allow_html=True)
+    st.markdown("""<h3 align="center">2500 RSD</h3>""",unsafe_allow_html=True)
+    st.markdown("""
+    <p align="center">Boja: Crna</p>
+    """,unsafe_allow_html=True)
+with columns_products[2]:
+  with st.container(border=True,key="container_products_03"):
+    st.image("resources/wifi_porter_0 - Copy2.png",use_container_width=True)
+    st.markdown("""<h2 align="center"> <span style="color:#60b4ff">PovežiSe</span><br>White Edition</h2>""",unsafe_allow_html=True)
+    st.markdown("""<h3 align="center">2500 RSD</h3>""",unsafe_allow_html=True)
+    st.markdown("""
+    <p align="center">Boja: Bela</p>
+    """,unsafe_allow_html=True)
+
+
+# st.markdown(" [Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.](#kontaktirajte-nas)")
+# st.divider()
 
 # Testimonijali sekcija
 # st.header("Šta kažu naši klijenti?")
@@ -169,30 +278,50 @@ st.divider()
 # st.divider()
 
 # FAQ sekcija
-st.header("Često postavljana pitanja")
-faq1 = st.expander("Kako instalirati PovežiSe?")
-faq1.write("Jednostavno postavite uređaj na vidljivo mesto i povežite ga sa WiFi mrežom:")
-faq1.write("""
-Koraci:
-1. Otvorite aplikaciju na telefonu.
-2. Upisite ime i sifru WiFi-a, i prislonite telefon na PovežiSe.
-3. Skinite pdf fajl sa markiranim QR codom i sifrom, koju postavljate na zadnji deo uredjaja.
-""")
-faq2 = st.expander("Da li radi sa svim uređajima?")
-faq2.write("PovežiSe je kompatibilan sa svim modernim pametnim telefonima i tabletima.")
-faq2.write("""
-           - **NFC** tehnologiju poseduje većina novijih pametnih telefona.
-           - **QR code** mogu da skeniraju svi telefoni koji poseduju kameru.
-           - Uz pomoć **imena i šifre WiFi-a** mogu se povezati svi uređaji.
-""")
+st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+st.header("Često postavljana pitanja:")
 
-# faq3 = st.expander("Mogu li personalizovati WiFi Porter?")
-# faq3.write("Da, možemo prilagoditi izgled uređaja sa vašim logotipom.")
+# Using two columns for FAQ layout
+col1, col2 = st.columns(2)
+
+with col1:
+    faq1 = st.expander("Kako instalirati :blue[PovežiSe]?")
+    faq1.write("Instalacija :blue[PovežiSe] uređaja je brza i jednostavna. Pratite sledeće korake:")
+    faq1.write("""
+    Koraci:
+    1. Postavite uređaj na vidljivo i lako dostupno mesto.
+    2. Otvorite aplikaciju na svom telefonu i unesite ime i šifru WiFi mreže.
+    3. Prislonite telefon na uređaj :blue[PovežiSe] da biste ga povezali sa mrežom.
+    4. Preuzmite PDF fajl sa QR kodom i šifrom, i postavite ga na zadnji deo uređaja, kako bi gosti mogli lako da se povežu putem QR koda.
+    """)
+    faq2 = st.expander("Da li uređaj radi sa svim uređajima?")
+    faq2.write(":blue[PovežiSe] je kompatibilan sa svim modernim pametnim telefonima i tabletima, uz sledeće tehnologije:")
+    faq2.write("""
+    - **NFC** tehnologija je podržana od strane većine novijih pametnih telefona.
+    - **QR kod** može da skenira svaki telefon sa kamerom.
+    - **WiFi ime i šifra** omogućavaju povezivanje svih uređaja, čak i onih koji nemaju NFC ili QR podršku.
+    """)
+    faq4 = st.expander("Koliko uređaja mogu povezati na mrežu?")
+    faq4.write(":blue[PovežiSe] omogućava povezivanje više uređaja na istu WiFi mrežu. Nema ograničenja u broju uređaja koji mogu koristiti istu mrežu, ali za optimalne performanse, preporučujemo povezivanje do 30 uređaja po mreži.")
+
+with col2:
+    faq3 = st.expander("Koje boje su dostupne?")
+    faq3.write(":blue[PovežiSe] uređaj je dostupan u dve boje: bela i crna, kako bi se uklopio u svaki prostor.")
+    faq5 = st.expander("Da li je :blue[PovežiSe] uređaj bezbedan?")
+    faq5.write("Da, :blue[PovežiSe] koristi sigurnosne protokole koji osiguravaju da vaša WiFi mreža bude zaštićena prilikom povezivanja uređaja. Podaci su šifrovani i sigurni.")
+    faq6 = st.expander("Šta ako ne mogu da povežem uređaj?")
+    faq6.write("Ako imate problem sa povezivanjem, proverite sledeće:")
+    faq6.write("""
+    1. Uverite se da je WiFi signal dovoljno jak na mestu gde se nalazi uređaj :blue[PovežiSe].
+    2. Proverite da li ste ispravno uneli ime i šifru WiFi mreže.
+    3. Ako koristite NFC ili QR kod, proverite da li je vaš telefon kompatibilan sa tim tehnologijama.
+    4. Ako i dalje imate problema, obratite nam se putem korisničke podrške.
+    """)
+
 st.divider()
-
 # Kontakt forma
 st.header("Kontaktirajte nas")
-st.write("Popunite formu ispod za više informacija o WiFi Porteru.")
+st.write("Popunite formu ispod za više informacija o :blue[PovežiSe].")
 with st.form(key="contact_form"):
     name = st.text_input("Vaše ime")
     email = st.text_input("Vaš email")
@@ -204,8 +333,9 @@ with st.form(key="contact_form"):
 # Footer
 st.markdown("""
 ---
-Kontakt informacije:
-- Email: info@povezise.rs
-- Telefon: +381 64 123 4567
-""")
+© 2024 PovežiSe a WebApp Landing Page by Dule_Pan.
 
+""")
+#Kontakt informacije:
+# - Email: info@povezise.rs
+# - Telefon: +381 64 123 4567
