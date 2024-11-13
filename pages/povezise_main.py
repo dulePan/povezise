@@ -279,7 +279,7 @@ with columns_products[2]:
 
 # FAQ sekcija
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
-st.header("Često postavljana pitanja:")
+st.markdown("""<div style="text-align: center;margin-bottom: 30px"><h1>Često postavljana pitanja:</h1></div>""",unsafe_allow_html=True)
 
 # Using two columns for FAQ layout
 col1, col2 = st.columns(2)
