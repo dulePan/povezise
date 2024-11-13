@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 
+
 # Naslovna slika i CTA
 columns_main = st.columns(2) 
 with columns_main[0]:
@@ -331,6 +332,8 @@ with st.form(key="contact_form"):
         st.success(f"Hvala {name}, vaša poruka je poslata!")
 
 # Footer
+st.image("resources\logo_povezise.png",width=100)
+
 st.markdown("""
 ---
 © 2024 PovežiSe a WebApp Landing Page by Dule_Pan.
