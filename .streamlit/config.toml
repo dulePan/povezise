@@ -1,0 +1,18 @@
+[browser]
+gatherUsageStats = false
+
+[logger]
+# Level of logging: 'error', 'warning', 'info', or 'debug'.
+# Default: 'info'
+level = "info"
+messageFormat = "%(asctime)s %(message)s"
+
+[client]
+toolbarMode = "viewer"
+showSidebarNavigation = false
+
+[theme]
+primaryColor="#4CBBFC"
+backgroundColor="#141a28"
+secondaryBackgroundColor="#439AD4"
+textColor="#FFFFFF"
