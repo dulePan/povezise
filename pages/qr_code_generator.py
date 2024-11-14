@@ -42,13 +42,13 @@ if st.button("Generiši QR kod"):
         qr_buffer.seek(0)
 
         # Prikaz QR koda
-        st.image(qr_buffer, caption="Skrenirajte QR kod da biste se povezali na WiFi", use_column_width=False)
+        st.image(qr_buffer, caption="Skrenirajte QR kod da biste se povezali na WiFi", use_container_width=False)
 
         # PDF Generation
         pdf_buffer = BytesIO()  # Buffer for the PDF
         # Define dimensions for the rectangle in mm
-        rect_width_mm = 73  # Rectangle width in mm
-        rect_height_mm = 37  # Rectangle height in mm
+        rect_width_mm = 74  # Rectangle width in mm
+        rect_height_mm = 33.7  # Rectangle height in mm
         # Convert mm to points (1 mm = 2.83465 points)
         rect_width_pts = rect_width_mm * mm
         rect_height_pts = rect_height_mm * mm
@@ -57,23 +57,23 @@ if st.button("Generiši QR kod"):
 
         # Draw a rectangle outline (adjust coordinates as needed)
         rect_x, rect_y = 20 * mm, height - 80 * mm
-        rect_width, rect_height = 72 * mm, 36 * mm
+        rect_width, rect_height = 73.5 * mm, 33.30 * mm
 
         # Set line width for border
         border_line_width = 2  # Set your desired line width here
         c_show.setLineWidth(border_line_width)  # Set the line width
 
         # Set dash pattern for dashed border
-        c_show.setDash(3, 2)  # 3 mm dashes and 2 mm gaps
+        c_show.setDash(4, 2)  # 3 mm dashes and 2 mm gaps
         c_show.setStrokeColorRGB(0, 0, 0)  # Set border color to black
         # c.setFillColorRGB(1, 1, 1)  # Ensure rectangle is filled with white        
-        c_show.rect(1.5,1, rect_width, rect_height, stroke=1, fill=0)
+        c_show.rect(0.5,0.5, rect_width, rect_height, stroke=1, fill=0)
 
         # Save QR code to a temporary file and add to PDF
         with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp_file:
             qr_image.save(tmp_file, format="PNG")
             tmp_file_path = tmp_file.name
-        c_show.drawImage(tmp_file_path, 4.5 * mm, 9.5 * mm, width=23 * mm, height=23 * mm)
+        c_show.drawImage(tmp_file_path, 4 * mm, 5 * mm, width=24 * mm, height=24 * mm)
 
 
         # Insert QR Code on the left side
@@ -82,10 +82,10 @@ if st.button("Generiši QR kod"):
 
         # Add WiFi credentials text on the right side
         text_x =  35 * mm
-        text_y =  21 * mm
+        text_y =  17 * mm
         c_show.setFont("Roboto-Bold",7.5)
-        c_show.drawString(text_x, text_y, f"WiFi: {ssid}")
-        c_show.drawString(text_x, 18 * mm, f"Pass: {password}")
+        c_show.drawString(text_x, text_y, f"WiFi:  {ssid}")
+        c_show.drawString(text_x, 14 * mm, f"Pass: {password}")
 
         # Save the PDF
         c_show.save()
@@ -121,7 +121,7 @@ if st.button("Generiši QR kod"):
         c_print.drawImage(tmp_file_path, 4.5 * mm, 9.5 * mm, width=23 * mm, height=23 * mm)
         # Add WiFi credentials text on the right side
         c_print.setFont("Roboto-Bold",7.5)
-        c_print.drawString(text_x, text_y, f"WiFi:  {ssid}")
+        c_print.drawString(text_x, text_y, f"WiFi: {ssid}")
         c_print.drawString(text_x, 18 * mm, f"Pass: {password}")
         # Save the PDF
         c_print.save()
