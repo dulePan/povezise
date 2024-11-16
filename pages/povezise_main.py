@@ -183,7 +183,6 @@ st.markdown("""
  
 # st.divider()
 # Cenovnik sekcija
-# st.header("Cenovnik")
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
 st.markdown("""
 <div style="margin-top: 30px;">
@@ -191,52 +190,6 @@ st.markdown("""
     <h1>Naša Kolekcija</h1>
     <p>Izaberite savršen <span style="color:#60b4ff">PovežiSe</span> uređaj za vašu potrebu! Nudimo fleksibilne pakete uređaja sa opcijama za različite potrebe – od manjih instalacija do većih objekata. Uređaji dolaze u dve elegantne boje: bela i crna, sa istom cenom za oba modela.</p>
   </div>
-<div class="row collections" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
-  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
-    <div class="row m0 featured-img">
-      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-1-213x213.jpg" alt="PovežiSe NFC Edition" style="max-width: 100%; height: auto;">
-    </div>
-    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> NFC Edition</h4>
-    <h5 class="category">WiFi Connection Device</h5>
-    <h4 class="price">2500 din</h4>
-    <p><strong>Izbor boje:</strong> Bela i Crna</p>
-    <a href="#product-choose-4" class="btn">CHOOSE</a>
-  </div>
-
-  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
-    <div class="row m0 featured-img">
-      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe QR Edition" style="max-width: 100%; height: auto;">
-    </div>
-    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> QR Edition</h4>
-    <h5 class="category">WiFi Connection Device</h5>
-    <h4 class="price">2500 din</h4>
-    <p><strong>Izbor boje:</strong> Bela i Crna</p>
-    <a href="#product-choose-3" class="btn">CHOOSE</a>
-  </div>
-
-  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="1" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
-    <div class="row m0 featured-img">
-      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-3-213x213.jpg" alt="PovežiSe Basic Edition" style="max-width: 100%; height: auto;">
-    </div>
-    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Basic Edition</h4>
-    <h5 class="category">WiFi Connection Device</h5>
-    <h4 class="price">2500 din</h4>
-    <p><strong>Izbor boje:</strong> Bela i Crna</p>
-    <a href="#product-choose-2" class="btn">CHOOSE</a>
-  </div>
-
-  <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="0.5" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
-    <div class="row m0 featured-img">
-      <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe Premium Edition" style="max-width: 100%; height: auto;">
-    </div>
-    <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Premium Edition</h4>
-    <h5 class="category">WiFi Connection Device</h5>
-    <h4 class="price">2500 din</h4>
-    <p><strong>Izbor boje:</strong> Bela i Crna</p>
-    <a href="#product-choose-1" class="btn">CHOOSE</a>
-  </div>
-</div>
-
 </div>
 """, unsafe_allow_html=True)
 
@@ -264,19 +217,6 @@ with columns_products[2]:
 # st.divider()
 
 # Testimonijali sekcija
-# st.header("Šta kažu naši klijenti?")
-# st.write("Pogledajte iskustva vlasnika apartmana i hotela.")
-# col1, col2, col3 = st.columns(3)
-# with col1:
-#     with st.container(border=True):
-#       st.info("Marko, vlasnik apartmana: Gostima je sada mnogo lakše da se povežu na WiFi.")
-# with col2:
-#     with st.container(border=True):
-#       st.info("Milica, menadžer hotela: Smanjili smo zahteve za podršku zahvaljujući WiFi Porteru.")
-# with col3:
-#     with st.container(border=True):
-#       st.info("Ivana, vlasnica hostela: Savršen uređaj za brzo povezivanje gostiju.")
-# st.divider()
 
 # FAQ sekcija
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
