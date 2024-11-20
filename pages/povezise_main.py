@@ -85,7 +85,10 @@ st.markdown("""<h4 align="center" style="margin-bottom: 25px;"> <span style="col
 
 columns_how_works_1 = st.columns(2, vertical_alignment="center")
 with columns_how_works_1[0]:
-  st.image("resources/wifi_porter_1.jpg", caption="NFC - Prislonite telefon", use_container_width=False, width=500)
+  video_file = open("resources/nfc_connect.mp4", "rb") 
+  video_bytes = video_file.read()
+  st.video(video_bytes,muted=True, loop = True,autoplay=True)
+  # st.image("resources/wifi_porter_1.jpg", caption="NFC - Prislonite telefon", use_container_width=False, width=500)
 with columns_how_works_1[1]: 
   st.markdown("""<h1 align="start" style="white-space: nowrap;"> Povežite se putem NFC-a</h1>""",unsafe_allow_html=True)
   st.markdown("""<h4 align="start" style="color:#a6a6a6"> <span style="font-weight: bold;">Instant povezanost: </span> Uživajte u trenutnom povezivanju jednostavnim prislanjanjem telefona na uređaj. 
@@ -103,9 +106,12 @@ with columns_how_works_2[0]:
   st.subheader("Koraci za povezivanje:")
   st.subheader(" :blue[:material/smartphone_camera:] Otvorite aplikaciju za kameru na telefonu")
   st.subheader(" :blue[:material/qr_code_scanner:] Skenirajte QR kod prikazan na uređaju")
-  st.subheader(" :blue[:material/automation:] Telefon automatski preuzima podatke i povezuje vas na mrežu")
+  st.subheader(" :blue[:material/automation:] Telefon automatski preuzima podatke i povezuje vas na mrežu na klik")
 with columns_how_works_2[1]:
-  st.image("resources/wifi_porter_1.jpg", caption="QR kod - Skenirajte QR kod", use_container_width=False, width=500)
+  # st.image("resources/wifi_porter_1.jpg", caption="QR kod - Skenirajte QR kod", use_container_width=False, width=500)
+  video_file = open("resources/qrcode_connect.mp4", "rb") 
+  video_bytes = video_file.read()
+  st.video(video_bytes,muted=True, loop = True,autoplay=True)
 
 columns_how_works_3 = st.columns(2, vertical_alignment="center")
 with columns_how_works_3[0]:  
@@ -183,7 +189,62 @@ st.markdown("""
  
 # st.divider()
 # Cenovnik sekcija
+# st.header("Cenovnik")
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+# st.markdown("""
+# <div style="margin-top: 30px;">
+#   <div style="text-align: center;">
+#     <h1>Naša Kolekcija</h1>
+#     <p>Izaberite savršen <span style="color:#60b4ff">PovežiSe</span> uređaj za vašu potrebu! Nudimo fleksibilne pakete uređaja sa opcijama za različite potrebe – od manjih instalacija do većih objekata. Uređaji dolaze u dve elegantne boje: bela i crna, sa istom cenom za oba modela.</p>
+#   </div>
+# <div class="row collections" style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+#   <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+#     <div class="row m0 featured-img">
+#       <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-1-213x213.jpg" alt="PovežiSe NFC Edition" style="max-width: 100%; height: auto;">
+#     </div>
+#     <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> NFC Edition</h4>
+#     <h5 class="category">WiFi Connection Device</h5>
+#     <h4 class="price">2500 din</h4>
+#     <p><strong>Izbor boje:</strong> Bela i Crna</p>
+#     <a href="#product-choose-4" class="btn">CHOOSE</a>
+#   </div>
+
+#   <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="SPORTS EDITION" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+#     <div class="row m0 featured-img">
+#       <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe QR Edition" style="max-width: 100%; height: auto;">
+#     </div>
+#     <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> QR Edition</h4>
+#     <h5 class="category">WiFi Connection Device</h5>
+#     <h4 class="price">2500 din</h4>
+#     <p><strong>Izbor boje:</strong> Bela i Crna</p>
+#     <a href="#product-choose-3" class="btn">CHOOSE</a>
+#   </div>
+
+#   <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="1" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+#     <div class="row m0 featured-img">
+#       <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-3-213x213.jpg" alt="PovežiSe Basic Edition" style="max-width: 100%; height: auto;">
+#     </div>
+#     <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Basic Edition</h4>
+#     <h5 class="category">WiFi Connection Device</h5>
+#     <h4 class="price">2500 din</h4>
+#     <p><strong>Izbor boje:</strong> Bela i Crna</p>
+#     <a href="#product-choose-2" class="btn">CHOOSE</a>
+#   </div>
+
+#   <div class="col-sm-6 col-md-3 item wow fadeIn" data-wow-delay="0.5" style="visibility: visible; animation-name: fadeIn; flex: 1 1 22%; margin: 10px; text-align: center;">
+#     <div class="row m0 featured-img">
+#       <img decoding="async" class="product-gallery-image-single" src="https://ninetheme.com/themes/proland/wp-content/uploads/2016/06/collection-2-213x213.jpg" alt="PovežiSe Premium Edition" style="max-width: 100%; height: auto;">
+#     </div>
+#     <h4 class="title"><span style="color:#60b4ff">PovežiSe</span> Premium Edition</h4>
+#     <h5 class="category">WiFi Connection Device</h5>
+#     <h4 class="price">2500 din</h4>
+#     <p><strong>Izbor boje:</strong> Bela i Crna</p>
+#     <a href="#product-choose-1" class="btn">CHOOSE</a>
+#   </div>
+# </div>
+
+# </div>
+# """, unsafe_allow_html=True)
 st.markdown("""
 <div style="margin-top: 30px;">
   <div style="text-align: center;">
@@ -194,8 +255,8 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
-columns_products = st.columns(4,gap ="medium")
-with columns_products[1]:
+columns_products = st.columns(2,gap ="medium")
+with columns_products[0]:
   with st.container(border=True,key="container_products_02"):
     st.image("resources/wifi_porter_0 - Copy2.png",use_container_width=True)
     st.markdown(f"""<h2 align="center"> <span style="color:#60b4ff">PovežiSe</span><br>Black Edition</h2>""",unsafe_allow_html=True)
@@ -203,9 +264,22 @@ with columns_products[1]:
     st.markdown("""
     <p align="center">Boja: Crna</p>
     """,unsafe_allow_html=True)
-with columns_products[2]:
+with columns_products[1]:
   with st.container(border=True,key="container_products_03"):
-    st.image("resources/wifi_porter_0 - Copy2.png",use_container_width=True)
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+
+    st.image("resources/wifi_porter_white.png",use_container_width=True)  
+
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
+    st.markdown(f"\n \n")
     st.markdown("""<h2 align="center"> <span style="color:#60b4ff">PovežiSe</span><br>White Edition</h2>""",unsafe_allow_html=True)
     st.markdown("""<h3 align="center">2500 RSD</h3>""",unsafe_allow_html=True)
     st.markdown("""
@@ -217,9 +291,37 @@ with columns_products[2]:
 # st.divider()
 
 # Testimonijali sekcija
+# st.header("Šta kažu naši klijenti?")
+# st.write("Pogledajte iskustva vlasnika apartmana i hotela.")
+# col1, col2, col3 = st.columns(3)
+# with col1:
+#     with st.container(border=True):
+#       st.info("Marko, vlasnik apartmana: Gostima je sada mnogo lakše da se povežu na WiFi.")
+# with col2:
+#     with st.container(border=True):
+#       st.info("Milica, menadžer hotela: Smanjili smo zahteve za podršku zahvaljujući WiFi Porteru.")
+# with col3:
+#     with st.container(border=True):
+#       st.info("Ivana, vlasnica hostela: Savršen uređaj za brzo povezivanje gostiju.")
+# st.divider()
 
 # FAQ sekcija
 st.markdown('<div style="margin-top: 60px;"></div>', unsafe_allow_html=True)
+st.markdown("""<div style="text-align: center;margin-bottom: 30px"><h1>Galerija</h1></div>""",unsafe_allow_html=True)
+columns_gallery = st.columns(4)
+with columns_gallery[0]:
+  st.image("resources/gal_img01.jpg",use_container_width=True,)
+  st.image("resources/gal_img05.jpg",use_container_width=True,)
+with columns_gallery[1]:
+  st.image("resources/gal_img07.jpg",use_container_width=True,)
+  st.image("resources/gal_img06.jpg",use_container_width=True,)
+with columns_gallery[2]:
+  st.image("resources/gal_img03.jpg",use_container_width=True,)
+  st.image("resources/gal_img02.jpg",use_container_width=True,)
+with columns_gallery[3]:
+  st.image("resources/gal_img04.jpg",use_container_width=True,)
+  st.image("resources/gal_img08.jpg",use_container_width=True,) 
+
 st.markdown("""<div style="text-align: center;margin-bottom: 30px"><h1>Često postavljana pitanja:</h1></div>""",unsafe_allow_html=True)
 
 # Using two columns for FAQ layout
@@ -262,14 +364,14 @@ with col2:
 st.divider()
 # Kontakt forma
 st.header("Kontaktirajte nas")
-st.write("Popunite formu ispod za više informacija o :blue[PovežiSe].")
-with st.form(key="contact_form"):
-    name = st.text_input("Vaše ime")
-    email = st.text_input("Vaš email")
-    message = st.text_area("Vaša poruka")
-    submit_button = st.form_submit_button(label="Pošaljite")
-    if submit_button:
-        st.success(f"Hvala {name}, vaša poruka je poslata!")
+st.write("Potražite nas na instagramu za više informacija o :blue[PovežiSe].")
+# with st.form(key="contact_form"):
+#     name = st.text_input("Vaše ime")
+#     email = st.text_input("Vaš email")
+#     message = st.text_area("Vaša poruka")
+#     submit_button = st.form_submit_button(label="Pošaljite")
+#     if submit_button:
+#         st.success(f"Hvala {name}, vaša poruka je poslata!")
 
 # Footer
 st.image("resources/logo_povezise.png",width=100)
