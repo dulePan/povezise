@@ -273,7 +273,7 @@ with columns_products[1]:
     st.markdown(f"\n \n")
 
     st.image("resources/wifi_porter_white.png",use_container_width=True)  
-
+ 
     st.markdown(f"\n \n")
     st.markdown(f"\n \n")
     st.markdown(f"\n \n")
@@ -364,7 +364,8 @@ with col2:
 st.divider()
 # Kontakt forma
 st.header("Kontaktirajte nas")
-st.write("Potražite nas na instagramu za više informacija o :blue[PovežiSe].")
+st.markdown("Potražite nas na [instagramu](https://www.instagram.com/povezise_official/) za više informacija o :blue[PovežiSe].")
+
 # with st.form(key="contact_form"):
 #     name = st.text_input("Vaše ime")
 #     email = st.text_input("Vaš email")
