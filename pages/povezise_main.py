@@ -1,7 +1,13 @@
 import streamlit as st
 from PIL import Image
 
-
+def scroll_to(element_id):
+    st.html(f'''
+        <script>
+            var element = window.parent.document.getElementById("{element_id}");
+            element.scrollIntoView({{behavior: 'smooth'}});
+        </script>
+    '''.encode())
 # Naslovna slika i CTA
 columns_main = st.columns(2) 
 with columns_main[0]:
@@ -15,11 +21,13 @@ with columns_main[0]:
   """,unsafe_allow_html=True)
   columns_actions = st.columns(2)
   with columns_actions[0]:
-    if st.button(":material/shopping_bag: Poruči 'PovežiSe'",type="primary", use_container_width=True ):
-      st.switch_page("pages/qr_code_generator.py")
+    st.link_button(label="Poruči 'PovežiSe'",url="https://www.instagram.com/povezise_official/",type="primary",icon=":material/shopping_bag: ", use_container_width =True )
+      # st.switch_page("pages/qr_code_generator.py")
   with columns_actions[1]:
-    if st.button(":material/play_arrow: Kako se koristi?", use_container_width=True):
-      st.switch_page("pages/qr_code_generator.py")
+    st.link_button(label=":material/play_arrow: Kako se koristi?",url="#80b97883", use_container_width=True)
+      # st.markdown("[helo](#80b97883)", unsafe_allow_html=True)
+      # st.query_params[f"#"] = "80b97883"
+      # st.switch_page("pages/qr_code_generator.py")
 with columns_main[1]:
   st.image("resources/wifi_porter_0 - Copy2.png",use_container_width=True,)
 
@@ -115,7 +123,7 @@ with columns_how_works_2[1]:
 
 columns_how_works_3 = st.columns(2, vertical_alignment="center")
 with columns_how_works_3[0]:  
-  st.image("resources/wifi_porter_1.jpg", caption="Povezivanje šifrom", use_container_width=False, width=500)
+  st.image("resources/gal_img05.jpg", caption="Povezivanje šifrom", use_container_width=False, width=500)
 with columns_how_works_3[1]:
   st.markdown("""<h1 align="start" style=""> Povezivanje uz lozinku</h1>""",unsafe_allow_html=True)
   st.markdown("""<h4 align="start" style="color:#a6a6a6"> <span style="font-weight: bold;">Tradicionalni način: </span> Za korisnike koji preferiraju unos lozinke, ova opcija omogućava sigurnu i poznatu metodu povezivanja.
@@ -264,6 +272,7 @@ with columns_products[0]:
     st.markdown("""
     <p align="center">Boja: Crna</p>
     """,unsafe_allow_html=True)
+    st.link_button(label="Poruči 'PovežiSe'",url="https://www.instagram.com/povezise_official/",type="primary",icon=":material/shopping_bag: ", use_container_width =True )
 with columns_products[1]:
   with st.container(border=True,key="container_products_03"):
     st.markdown(f"\n \n")
@@ -285,6 +294,7 @@ with columns_products[1]:
     st.markdown("""
     <p align="center">Boja: Bela</p>
     """,unsafe_allow_html=True)
+    st.link_button(label="Poruči 'PovežiSe'",url="https://www.instagram.com/povezise_official/",type="primary",icon=":material/shopping_bag: ", use_container_width =True )
 
 
 # st.markdown(" [Kontaktirajte nas za veće narudžbe i personalizaciju uređaja.](#kontaktirajte-nas)")
